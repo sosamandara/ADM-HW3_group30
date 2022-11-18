@@ -2,6 +2,7 @@ import pandas as pd
 # Stopwords
 from nltk.corpus import stopwords # nltk.download('stopwords')
 from spacy.lang.en.stop_words import STOP_WORDS
+
 stop_words = set(stopwords.words('english')) | set(STOP_WORDS) ## Cem: Here i comine to sets of stopwords to get a bigger list
 
 # Lemmatizer
