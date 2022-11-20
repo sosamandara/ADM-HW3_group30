@@ -1,8 +1,6 @@
 import os
 import pandas as pd
-import numpy as np
 from pandas.core.indexes.range import RangeIndex
-
 
 # Stopwords
 from nltk.corpus import stopwords # nltk.download('stopwords')
@@ -34,7 +32,7 @@ class ComplexEngine:
         query : dict
             A dictionary that contains the queries. The allowed keys are:
             - name: str
-            - description: str
+            - desc: str
             - address: str
             - usernames: list
             - tags: list
@@ -72,7 +70,7 @@ class ComplexEngine:
             print('No results found. Please try less restrictive queries s\'il vous plait.')
             print('ᕕ(ಥʖ̯ಥ) ᕗ')
         else:
-            return copy[['placeName', 'placeURL', 'placeEditors']]
+            return copy[['placeName', 'placeURL']]
 
     
     def filter_by_name(self, name: str, data: pd.DataFrame) -> RangeIndex:
@@ -148,7 +146,7 @@ class ComplexEngine:
 
         return text_column
 
-    def preprocess_str(text: str) -> str:
+    def preprocess_str(self, text: str) -> str:
         # Step 1: Lowercase
         text = text.lower()
         # Step 2.1: Remove all spaces, i.e., \n
