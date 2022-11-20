@@ -1,5 +1,5 @@
-# Homework 2 for Algorithmic Methods of Data Mining, Fall 2022: *Places of the World*
-This repository is for submitting the third homework for the course in the Algorithmic Methods of Data Mining, in the name of Group 36.
+# Homework 3 for Algorithmic Methods of Data Mining, Fall 2022: *Places of the World*
+This repository is for submitting the third homework for the course in the Algorithmic Methods of Data Mining, in the name of Group 30.
 
 ![A person using Instagram on their mobile phone](https://images.pexels.com/photos/3569950/pexels-photo-3569950.jpeg?auto=compress&cs=tinysrgb&w=300&h=375&dpr=2)
 
